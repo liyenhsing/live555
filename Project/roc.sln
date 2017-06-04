@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "live555", "live555.vcxproj", "{35456C5A-6873-291A-9908-061BCD606E02}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "roc", "roc.vcxproj", "{9C1CD40C-F647-3C93-3650-89502CA64F7E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "servertest", "servertest.vcxproj", "{4960E45D-E761-DD29-5578-F869B94183AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35456C5A-6873-291A-9908-061BCD606E02}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35456C5A-6873-291A-9908-061BCD606E02}.Debug|Win32.Build.0 = Debug|Win32
+		{35456C5A-6873-291A-9908-061BCD606E02}.Release|Win32.ActiveCfg = Release|Win32
+		{35456C5A-6873-291A-9908-061BCD606E02}.Release|Win32.Build.0 = Release|Win32
+		{4960E45D-E761-DD29-5578-F869B94183AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4960E45D-E761-DD29-5578-F869B94183AF}.Debug|Win32.Build.0 = Debug|Win32
+		{4960E45D-E761-DD29-5578-F869B94183AF}.Release|Win32.ActiveCfg = Release|Win32
+		{4960E45D-E761-DD29-5578-F869B94183AF}.Release|Win32.Build.0 = Release|Win32
+		{9C1CD40C-F647-3C93-3650-89502CA64F7E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C1CD40C-F647-3C93-3650-89502CA64F7E}.Debug|Win32.Build.0 = Debug|Win32
+		{9C1CD40C-F647-3C93-3650-89502CA64F7E}.Release|Win32.ActiveCfg = Release|Win32
+		{9C1CD40C-F647-3C93-3650-89502CA64F7E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
