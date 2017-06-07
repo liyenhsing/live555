@@ -592,6 +592,77 @@
     },
     # END ROC PROJECT
 
+    # BEGIN ROC PROJECT
+
+     {
+      'target_name':'rtspserver',
+      'type':'executable',
+      'include_dirs':[
+        '../3rd/live555/BasicUsageEnvironment/include',
+        '../3rd/live555/groupsock/include',
+        '../3rd/live555/liveMedia/include',
+        '../3rd/live555/UsageEnvironment/include',
+        '../3rd',
+      ],
+      'sources':[
+          '../example/rtspserver/DynamicRTSPServer.cpp', 
+          '../example/rtspserver/DynamicRTSPServer.hh', 
+          '../example/rtspserver/live555MediaServer.cpp', 
+          '../example/rtspserver/version.hh', 
+      ],
+      'link_settings':{
+        'libraries':[
+        'ws2_32.lib',
+        './Release/lib/live555.lib'
+        ]
+      },
+      'defines':[
+        'WIN32',
+        'NDEBUG',
+        '_WINDOWS',
+        'UILIB_EXPORTS',
+       ],
+
+    },
+    # END RTSPSERVER TEST
+
+
+    # BEGIN MY RTSPSERVER TEST
+
+     {
+      'target_name':'TestRtspServer',
+      'type':'executable',
+      'include_dirs':[
+        '../3rd/live555/BasicUsageEnvironment/include',
+        '../3rd/live555/groupsock/include',
+        '../3rd/live555/liveMedia/include',
+        '../3rd/live555/UsageEnvironment/include',
+        '../3rd',
+      ],
+      'sources':[
+          '../example/TestRtspServer/TestRtspServer.cpp', 
+          '../example/TestRtspServer/TestRtspServer.h', 
+          '../example/TestRtspServer/main.cpp',  
+      ],
+      'link_settings':{
+        'libraries':[
+        'ws2_32.lib',
+        './Release/lib/live555.lib'
+        ]
+      },
+      'defines':[
+        'WIN32',
+        'NDEBUG',
+        '_WINDOWS',
+        'UILIB_EXPORTS',
+       ],
+
+    },
+    # END MY RTSPSERVER TEST
+
+
+
+
 
   ]
 }
