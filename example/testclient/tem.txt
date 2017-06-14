@@ -1,0 +1,22 @@
+int main(int argc, char** argv) {
+  // Begin by setting up our usage environment:
+  TaskScheduler* scheduler = BasicTaskScheduler::createNew();
+  env = BasicUsageEnvironment::createNew(*scheduler);
+
+  progName = "rtspCon";
+  duration = 20;
+  gettimeofday(&startTime, NULL);
+
+  streamURL = "rtsp://10.142.62.193/test_video.264";
+
+  ourClient = createClient(*env, streamURL, verbosityLevel, progName);
+    if (ourClient == NULL) {
+      *env << "Failed to create " << clientProtocolName << " client: " << env->getResultMsg() << "\n";
+      shutdown();
+    }
+    continueAfterClientCreation1();
+  // All subsequent activity takes place within the event loop:
+  env->taskScheduler().doEventLoop(); // does not return
+
+  return 0; // only to prevent compiler warning
+}
